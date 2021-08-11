@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Lost Memories</title>
+  <link rel="shortcut icon" href="images/master/2AppIcon36.png" />
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/vhs.css">
+  <link rel="stylesheet" href="css/jquery.mb.YTPlayer.min.css">
+
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.13/css/all.css'>
+
+</head>
+
+<body>
+
+  <div class="wrap">
+    <nav class="navbar navbar-light bg-transparent fixed-top">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="visibility: hidden;" aria-hidden="true">
+          <div class="offcanvas-header">
+            <img src="images/tlm_logo_s.png" class="img-fluid text-center">
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 text-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#0">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#1">THE LOST MEMORIES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#2">PRE-REGISTERATION</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#3">HEROES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#4">WORLD</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar -->
+
+  </div>
+
+  <div id="app">
+    <div class="sections-menu">
+      <span
+         class="menu-point"
+         v-bind:class="{active: activeSection == index}"
+         v-on:click="scrollToSection(index)"
+         v-for="(offset, index) in offsets"
+         v-bind:key="index">
+      </span>
+    </div>
+    <section class="fullpage blue" id="0">
+      <div class="container"> 
+        <div id="background" class="player" data-property="{
+          videoURL: 'https://youtu.be/C80pUQ3C2rM',
+          mute: true,
+          showControls: false,
+          useOnMobile: true,
+          quality: 'highres',
+          containment: 'body',
+          loop: true,
+          autoPlay: true,
+          stopMovieOnBlur: false,
+          startAt: 0,
+          opacity: 1
+        }">
+        </div>      
+        <div class="row">
+          <div class="text-center vhs-top vhs-delay-1">
+            <img src="images/tlm_logo.png" class="img-fluid" alt="tlm_logo">
+          </div>
+          <div class="app_btn text-center vhs-bottom vhs-delay-2">
+            <button type="button" class="btn btn-black" style="margin: 10px;">
+              <img src="images/master/google_btn_1.jpg" class="img-fluid">
+            </button>
+            <button type="button" class="btn btn-black" style="margin: 10px;">
+              <img src="images/master/apple_btn_1.jpg" class="img-fluid">
+            </button>
+            <div class="text-center scroll-button">
+              <a href="#1">
+                <i class="fas fa-angle-down"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="fullpage black" id="1">
+      <div class="container">
+        <div class="row">
+          <h1 class="text-center" style="color: #0d6efd;">
+            <strong>
+              In the world of Rune-Midgard,<br>
+              Experience a brand new story!
+            </strong>
+          </h1> 
+          <div class="bd-example" style="margin-top: 36px;">
+            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-ride="carousel" style="border: 2px solid; box-shadow: 5px 5px;">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/u6mjWHdWydI" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Vd3QnVZehz0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/u6mjWHdWydI" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </section>
+    <section class="fullpage red" id="2">
+      <div class="">
+        <div class="container">
+          <h1 style="color: #94c4ea;">
+            <strong>
+              PRE-REGISTRATION
+            </strong>
+          </h1>
+          <div class="gift_01">
+            <img src="images/gift_01.png" class="img-fluid" alt="...">
+          </div> 
+          <div class="mx-auto" style="max-width: 670px; margin-top: 10px;">
+            <input type="text" class="form-control" id="E-mail" placeholder="Please enter your E-mail address" required>
+            <div class="invalid-feedback">
+              Please enter your E-mail address.
+            </div>
+          </div>
+          <div class="form-check form-check-inline" style="margin: 13px;">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            <label class="form-check-label" for="inlineCheckbox1" style="color: white;">I agree with everything</label>
+            <button type="button" class="btn-ro btn-outline-detail"  data-bs-toggle="modal" data-bs-target="#btn_agree_detail">Detail</button>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="btn_agree_detail" tabindex="-1" aria-labelledby="btn_agree_detail" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-body" style="padding: 30px 30px 10px 30px;">
+                  <p>
+                    I agree to Gravity Interactive Inc.’s Terms of Service and would like to receive newsletters with exclusive offers and the latest updates for Ragnarok: The Lost Memories and other Gravity Interactive games. (You can unsubscribe at any time.) To understand how we process your information, please refer to our Privacy Policy
+                  </p>
+                </div>
+                <button type="button" class="btn btn-primary mx-auto" data-bs-dismiss="modal" style="margin-bottom: 20px;">Close</button>
+              </div>
+            </div>
+          </div>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-center mb-4 mb-lg-3">
+            <button type="button" class="btn btn-purple btn-lg px-4 me-md-2 fw-bold" data-bs-toggle="modal" data-bs-target="#btn_registration">PRE-REGISTER NOW</button>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="btn_registration" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content" style="background-image: url(images/gift_bg.jpg);">
+                <div class="modal-body" style="padding: 30px;">
+                  <h2 style="color: #94c4ea;">
+                    <strong>
+                      Pre-Registration is complete!
+                    </strong>
+                  </h2>
+                  <p style="color: #b198d9;">Additional rewards are available if you Pre-Register on Google Play & Appstore!</p>
+                  <div class="gift_01">
+                    <img src="images/gift_02.png" class="img-fluid" alt="...">
+                  </div>
+                  <div class="app_btn">
+                    <button type="button" class="btn btn-black" style="margin: 10px;">
+                      <img src="images/master/google_btn_1.jpg">
+                    </button>
+                    <button type="button" class="btn btn-black" style="margin: 10px;">
+                      <img src="images/master/apple_btn_1.jpg">
+                    </button>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-light mx-auto" data-bs-dismiss="modal" style="margin-bottom: 20px;">Close</button>
+              </div>
+            </div>
+          </div>
+          <div class="gift_01">
+            <img src="images/gift_02.png" class="img-fluid" alt="...">
+          </div>
+          <div class="app_btn">
+            <button type="button" class="btn btn-black" style="margin: 10px;">
+              <img src="images/master/google_btn_1.jpg">
+            </button>
+            <button type="button" class="btn btn-black" style="margin: 10px;">
+              <img src="images/master/apple_btn_1.jpg">
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="fullpage green" id="3">
+      <div class="">
+        <div class="container">
+  
+            <div class="align-items-start">
+  
+              <div class="tab-content" id="v-pills-tabContent">
+  
+                <div class="tab-pane fade show active" id="cha-01" role="tabpanel" aria-labelledby="cha-01-tab">
+                  <div class="row">
+                    <div class="cha_box col-lg-3">
+                      <p class="text-start" style="padding: 20px 0 10px 0;">
+                        The daughter of a notorious head of institute known for burning their enemies on the battlefield. She is skilled in fire element, which complements her fiery personality.
+                      </p>
+                    </div>
+                    <div class="col-lg-9">
+                      <img src="images/cha_01.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                </div>
+  
+                <div class="tab-pane fade" id="cha-02" role="tabpanel" aria-labelledby="cha-02-tab">
+                  <img src="images/cha_02.png" class="img-fluid" alt="">
+                  <div class="cha_box">
+                    <p class="text-start" style="padding: 20px 0 10px 0;">
+                      A mysterious swordsman who woke up on Mount Mjolnir without any trace of his memories. A righteous adventure, he cannot tolerate injustice and is traveling to find clues about his past.
+                    </p>
+                  </div>
+                </div>
+  
+                <div class="tab-pane fade" id="cha-03" role="tabpanel" aria-labelledby="cha-03-tab">
+                  <img src="images/cha_03.png" class="img-fluid" alt="">
+                  <div class="cha_box">
+                    <p class="text-start" style="padding: 20px 0 10px 0;">
+                      An agent of the Blue Sea Lion, who secretly performs her duties out of sight. She has a strong mind and an uncanny ability to complete all of her missions.
+                    </p>
+                  </div>
+                </div>
+  
+                <div class="tab-pane fade" id="cha-04" role="tabpanel" aria-labelledby="cha-04-tab">
+                  <img src="images/cha_04.png" class="img-fluid" alt="">
+                  <div class="cha_box">
+                    <p class="text-start" style="padding: 20px 0 10px 0;">
+                      A faithful priest who can exert God's power to heal allies. It is unknown what led to her having such a strong belief in God.
+                    </p>
+                  </div>
+                </div>
+  
+                <div class="tab-pane fade" id="cha-05" role="tabpanel" aria-labelledby="cha-05-tab">
+                  <img src="images/cha_05.png" class="img-fluid" alt="">
+                  <div class="cha_box">
+                    <p class="text-start" style="padding: 20px 0 10px 0;">
+                      A Guillotine Cross who has carried out numerous missions without ever being spotted. The only time he is seen is when he is busy attacking his enemies.
+                    </p>
+                  </div>
+                </div>
+  
+                <div class="tab-pane fade" id="cha-06" role="tabpanel" aria-labelledby="cha-06-tab">
+                  <img src="images/cha_06.png" class="img-fluid" alt="">
+                  <div class="cha_box">
+                    <p class="text-start" style="padding: 20px 0 10px 0;">
+                      A saint who follows God's will and carries out God's teachings. A strong supporting ally who will assist in battle using her strong faith and determination.
+                    </p>
+                  </div>
+                </div>
+  
+                <div class="tab-pane fade" id="cha-07" role="tabpanel" aria-labelledby="cha-07-tab">
+                  <img src="images/cha_07.png" class="img-fluid" alt="">
+                  <div class="cha_box">
+                    <p class="text-start" style="padding: 20px 0 10px 0;">
+                      A beautiful blacksmith and grave robber who attracts the attention of many by using her charm and wit. She swings a giant axe, destroying her enemy's armor while strengthening her ally’s forces.
+                    </p>
+                  </div>
+                </div>
+  
+                <div class="tab-pane fade" id="cha-08" role="tabpanel" aria-labelledby="cha-08-tab">
+                  <img src="images/cha_08.png" class="img-fluid" alt="">
+                  <div class="cha_box">
+                    <p class="text-start" style="padding: 20px 0 10px 0;">
+                      A monk who always considers her life choices, even when she’s fully aware that she possesses greater talents than anyone else.
+                    </p>
+                  </div>
+                </div>
+  
+                <div class="tab-pane fade" id="cha-09" role="tabpanel" aria-labelledby="cha-09-tab">
+                  <img src="images/cha_09.png" class="img-fluid" alt="">
+                  <div class="cha_box">
+                    <p class="text-start" style="padding: 20px 0 10px 0;">
+                      A dancer who attracts the attention of others by performing a charming dance. Her dance routine helps her allies in battles as well as harming her enemies.
+                    </p>
+                  </div>
+                </div>
+  
+                <div class="tab-pane fade" id="cha-10" role="tabpanel" aria-labelledby="cha-10-tab">
+                  <img src="images/cha_10.png" class="img-fluid" alt="">
+                  <div class="cha_box">
+                    <p class="text-start" style="padding: 20px 0 10px 0;">
+                      A bard and a guild master who sing songs in battle to encourage his allies. Even though he is a bard, he wrote a few songs so painful that no one was meant to hear them.
+                    </p>
+                  </div>
+                </div>
+  
+                <div class="tab-pane fade" id="cha-11" role="tabpanel" aria-labelledby="cha-11-tab">
+                  <img src="images/cha_11.png" class="img-fluid" alt="">
+                  <div class="cha_box">
+                    <p class="text-start" style="padding: 20px 0 10px 0;">
+                      A wizard who's been studying magic for decades. While he can cast numerous magical spells, his specialty lies in magic that can disable and disorients his enemies.
+                    </p>
+                  </div>
+                </div>
+  
+                <div class="tab-pane fade" id="cha-12" role="tabpanel" aria-labelledby="cha-12-tab">
+                  <img src="images/cha_12.png" class="img-fluid" alt="">
+                  <div class="cha_box">
+                    <p class="text-start" style="padding: 20px 0 10px 0;">
+                      A hunter who travels the world with her friend Mora.
+                    </p>
+                  </div>
+                </div>
+  
+                <div class="tab-pane fade" id="cha-13" role="tabpanel" aria-labelledby="cha-13-tab">
+                  <img src="images/cha_13.png" class="img-fluid" alt="">
+                  <div class="cha_box">
+                    <p class="text-start" style="padding: 20px 0 10px 0;">
+                      A warmonger who can conjure strong, magical bullets to attack his enemies. At his beck and call, every enemy kneels to his power.
+                    </p>
+                  </div>
+                </div>
+  
+                <div class="tab-pane fade" id="cha-14" role="tabpanel" aria-labelledby="cha-14-tab">
+                  <img src="images/cha_14.png" class="img-fluid" alt="">
+                  <div class="cha_box">
+                    <p class="text-start" style="padding: 20px 0 10px 0;">
+                      A talkative alchemist who is filled with curiosity. By using her own self-made elixirs, she is able to help allies in combat while simultaneously damaging enemies.
+                    </p>
+                  </div>
+                </div>
+  
+                <div class="tab-pane fade" id="cha-15" role="tabpanel" aria-labelledby="cha-15-tab">
+                  <img src="images/cha_15.png" class="img-fluid" alt="">
+                  <div class="cha_box">
+                    <p class="text-start" style="padding: 20px 0 10px 0;">
+                      An archer who attacks quickly and with lethal force. She's often misunderstood and comes off as cold because of her quiet demeanor. Unlike her cold appearance, she has a personality of being obsessed about cute things.
+                    </p>
+                  </div>
+                </div>
+  
+                <div class="tab-pane fade" id="cha-16" role="tabpanel" aria-labelledby="cha-16-tab">
+                  <img src="images/cha_16.png" class="img-fluid" alt="">
+                  <div class="cha_box">
+                    <p class="text-start" style="padding: 20px 0 10px 0;">
+                      A proud and trustworthy thief who defeats her enemies with attacks focusing on their critical points. Even though she was previously in a gang, she has since changed her ways and followed Rina shortly after meeting her.
+                    </p>
+                  </div>
+                </div>
+  
+                <div class="tab-pane fade" id="cha-17" role="tabpanel" aria-labelledby="cha-17-tab">
+                  <img src="images/cha_17.png" class="img-fluid" alt="">
+                  <div class="cha_box">
+                    <p class="text-start" style="padding: 20px 0 10px 0;">
+                      A knight who consumes her own health to attack enemies with tremendous force. Always looking forward to a good fight, she will go berserk and never stop attacking until she is exhausted.
+                    </p>
+                  </div>
+                </div>
+  
+                <div class="tab-pane fade" id="cha-18" role="tabpanel" aria-labelledby="cha-18-tab">
+                  <img src="images/cha_18.png" class="img-fluid" alt="">
+                  <div class="cha_box">
+                    <p class="text-start" style="padding: 20px 0 10px 0;">
+                      A priest and a messenger who delivers the Valkyrie's will. She has bestowed upon him the power of healing and protecting allies, but also the strength of delivering a powerful blow to the enemy.
+                    </p>
+                  </div>
+                </div>
+  
+                <div class="tab-pane fade" id="cha-19" role="tabpanel" aria-labelledby="cha-19-tab">
+                  <img src="images/cha_19.png" class="img-fluid" alt="">
+                  <div class="cha_box">
+                    <p class="text-start" style="padding: 20px 0 10px 0;">
+                      An assassin who is known as the ‘magician killer’. Like her name, she is specialized in battle against those who are adept in the mystic arts. However, she often dreams of a peaceful life free from the guild.
+                    </p>
+                  </div>
+                </div>
+  
+                <div class="tab-pane fade" id="cha-20" role="tabpanel" aria-labelledby="cha-20-tab">
+                  <img src="images/cha_20.png" class="img-fluid" alt="">
+                  <div class="cha_box">
+                    <p class="text-start" style="padding: 20px 0 10px 0;">
+                      Geffen's number one villain, specializing in close combat. Having been beaten by Rina for many years, he is now a sad shell of a mage who always shows how poorly he stands up against her.
+                    </p>
+                  </div>
+                </div>
+  
+              </div>
+  
+              <div class="nav nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical" style="margin-top: 40px;">
+                <button class="nav-link active" id="cha-01-tab" data-bs-toggle="pill" data-bs-target="#cha-01" type="button" role="tab" aria-controls="cha-01" aria-selected="true">
+                  <img src="images/cha_s_01.png" class="img-fluid" alt="...">
+                </button>
+                <button class="nav-link" id="cha-02-tab" data-bs-toggle="pill" data-bs-target="#cha-02" type="button" role="tab" aria-controls="cha-02" aria-selected="false">
+                  <img src="images/cha_s_02.png" class="img-fluid" alt="...">
+                </button>
+                <button class="nav-link" id="cha-03-tab" data-bs-toggle="pill" data-bs-target="#cha-03" type="button" role="tab" aria-controls="cha-03" aria-selected="false">
+                  <img src="images/cha_s_03.png" class="img-fluid" alt="...">
+                </button>
+  
+                <button class="nav-link" id="cha-04-tab" data-bs-toggle="pill" data-bs-target="#cha-04" type="button" role="tab" aria-controls="cha-04" aria-selected="true">
+                  <img src="images/cha_s_04.png" class="img-fluid" alt="...">
+                </button>
+                <button class="nav-link" id="cha-05-tab" data-bs-toggle="pill" data-bs-target="#cha-05" type="button" role="tab" aria-controls="cha-05" aria-selected="false">
+                  <img src="images/cha_s_05.png" class="img-fluid" alt="...">
+                </button>
+                <button class="nav-link" id="cha-06-tab" data-bs-toggle="pill" data-bs-target="#cha-06" type="button" role="tab" aria-controls="cha-06" aria-selected="false">
+                  <img src="images/cha_s_06.png" class="img-fluid" alt="...">
+                </button>
+  
+                <button class="nav-link" id="cha-07-tab" data-bs-toggle="pill" data-bs-target="#cha-07" type="button" role="tab" aria-controls="cha-07" aria-selected="true">
+                  <img src="images/cha_s_07.png" class="img-fluid" alt="...">
+                </button>
+                <button class="nav-link" id="cha-08-tab" data-bs-toggle="pill" data-bs-target="#cha-08" type="button" role="tab" aria-controls="cha-08" aria-selected="false">
+                  <img src="images/cha_s_08.png" class="img-fluid" alt="...">
+                </button>
+                <button class="nav-link" id="cha-09-tab" data-bs-toggle="pill" data-bs-target="#cha-09" type="button" role="tab" aria-controls="cha-09" aria-selected="false">
+                  <img src="images/cha_s_09.png" class="img-fluid" alt="...">
+                </button>
+  
+                <button class="nav-link" id="cha-10-tab" data-bs-toggle="pill" data-bs-target="#cha-10" type="button" role="tab" aria-controls="cha-10" aria-selected="true">
+                  <img src="images/cha_s_10.png" class="img-fluid" alt="...">
+                </button>
+                <button class="nav-link" id="cha-11-tab" data-bs-toggle="pill" data-bs-target="#cha-11" type="button" role="tab" aria-controls="cha-11" aria-selected="false">
+                  <img src="images/cha_s_11.png" class="img-fluid" alt="...">
+                </button>
+                <button class="nav-link" id="cha-12-tab" data-bs-toggle="pill" data-bs-target="#cha-12" type="button" role="tab" aria-controls="cha-12" aria-selected="false">
+                  <img src="images/cha_s_12.png" class="img-fluid" alt="...">
+                </button>
+  
+                <button class="nav-link" id="cha-13-tab" data-bs-toggle="pill" data-bs-target="#cha-13" type="button" role="tab" aria-controls="cha-13" aria-selected="true">
+                  <img src="images/cha_s_13.png" class="img-fluid" alt="...">
+                </button>
+                <button class="nav-link" id="cha-14-tab" data-bs-toggle="pill" data-bs-target="#cha-14" type="button" role="tab" aria-controls="cha-14" aria-selected="false">
+                  <img src="images/cha_s_14.png" class="img-fluid" alt="...">
+                </button>
+                <button class="nav-link" id="cha-15-tab" data-bs-toggle="pill" data-bs-target="#cha-15" type="button" role="tab" aria-controls="cha-15" aria-selected="false">
+                  <img src="images/cha_s_15.png" class="img-fluid" alt="...">
+                </button>
+  
+                <button class="nav-link" id="cha-16-tab" data-bs-toggle="pill" data-bs-target="#cha-16" type="button" role="tab" aria-controls="cha-16" aria-selected="true">
+                  <img src="images/cha_s_16.png" class="img-fluid" alt="...">
+                </button>
+                <button class="nav-link" id="cha-17-tab" data-bs-toggle="pill" data-bs-target="#cha-17" type="button" role="tab" aria-controls="cha-17" aria-selected="false">
+                  <img src="images/cha_s_17.png" class="img-fluid" alt="...">
+                </button>
+                <button class="nav-link" id="cha-18-tab" data-bs-toggle="pill" data-bs-target="#cha-18" type="button" role="tab" aria-controls="cha-18" aria-selected="false">
+                  <img src="images/cha_s_18.png" class="img-fluid" alt="...">
+                </button>
+  
+                <button class="nav-link" id="cha-19-tab" data-bs-toggle="pill" data-bs-target="#cha-19" type="button" role="tab" aria-controls="cha-19" aria-selected="true">
+                  <img src="images/cha_s_19.png" class="img-fluid" alt="...">
+                </button>
+                <button class="nav-link" id="cha-20-tab" data-bs-toggle="pill" data-bs-target="#cha-20" type="button" role="tab" aria-controls="cha-20" aria-selected="false">
+                  <img src="images/cha_s_20.png" class="img-fluid" alt="...">
+                </button>
+                </div>
+              </div>
+  
+            </div>
+
+        </div>
+      </div>
+  </div>
+  
+</body>
+</html>
+<!-- partial -->
+  <script src="js/bootstrap.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js'></script>
+  <script src="js/script.js"></script>
+  <script src="js/jquery-latest.min.js"></script>
+  <script src="js/jquery.mb.YTPlayer.min.js"></script>
+  
+  <script type="text/javascript">
+    jQuery( function() {
+    jQuery( '#background' ).YTPlayer();
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,236 @@
+header.masthead {
+  padding-top: 18rem;
+  padding-bottom: 10rem;
+  text-align: center;
+  color: #fff;
+  background-image: url(../images/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  header.masthead {
+    padding-top: 27rem;
+    padding-bottom: 12rem;
+  }
+  header.masthead .masthead-subheading {
+    font-size: 2.25rem;
+    font-style: italic;
+    line-height: 2.25rem;
+    margin-bottom: 2rem;
+  }
+  header.masthead .masthead-heading {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-bottom: 4rem;
+  }
+}
+
+.bg_03 {
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+  background-image: url(../images/bg_03.jpg);
+  background-repeat: none;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+  color: #000000;
+}
+
+@media (min-width: 768px) {
+  .bg_03 {
+    padding-top: 5rem; 
+    padding-bottom: 7rem;
+  }
+  .bg_03 .subheading {
+    font-size: 2.25rem;
+    font-style: italic;
+    line-height: 2.25rem;
+    margin-bottom: 2rem;
+  }
+  .bg_03 .heading {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-bottom: 4rem;
+  }
+}
+
+.bg_04 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-image: url(../images/bg_04.jpg);
+  background-repeat: none;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+  color: #000000;
+}
+
+@media (min-width: 768px) {
+  .bg_04 {
+    padding-top: 14rem; 
+    padding-bottom: 14rem;
+  }
+  .bg_04 .subheading {
+    font-size: 2.25rem;
+    font-style: italic;
+    line-height: 2.25rem;
+    margin-bottom: 2rem;
+  }
+  .bg_04 .heading {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-bottom: 4rem;
+  }
+}
+
+.gift_01 {
+  padding: 0 0.5rem 0 0.5rem;
+}
+
+.app_btn {
+  margin: 1rem 0 0 1rem;
+}
+
+.btn-purple {
+  color: #fff;
+  background-color: #674e9b;
+  border-color: #674e9b;
+}
+.btn-purple:hover {
+  color: #fff;
+  background-color: #5c458a;
+  border-color: #5c458a;
+}
+.btn-check:focus + .btn-purple, .btn-purple:focus {
+  color: #fff;
+  background-color: #674e9b;
+  border-color: #5c458a;
+  box-shadow: 0 0 0 0.1rem rgba(49, 132, 253, 0.5);
+}
+.btn-check:checked + .btn-purple, .btn-check:active + .btn-purple, .btn-purple:active, .btn-purple.active, .show > .btn-purple.dropdown-toggle {
+  color: #fff;
+  background-color: #5c458a;
+  border-color: #5c458a;
+}
+.btn-check:checked + .btn-purple:focus, .btn-check:active + .btn-purple:focus, .btn-purple:active:focus, .btn-purple.active:focus, .show > .btn-purple.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.1rem rgba(49, 132, 253, 0.5);
+}
+.btn-purple:disabled, .btn-purple.disabled {
+  color: #fff;
+  background-color: #5c458a;
+  border-color: #5c458a;
+}
+
+.btn-black {
+  color: #fff;
+  background-color: #000000;
+  border-color: #000000;
+}
+.btn-black:hover {
+  color: #fff;
+  background-color: #000000;
+  border-color: #000000;
+}
+.btn-check:focus + .btn-black, .btn-black:focus {
+  color: #fff;
+  background-color: #000000;
+  border-color: #000000;
+  box-shadow: 0 0 0 0.1rem rgba(49, 132, 253, 0.5);
+}
+.btn-check:checked + .btn-black, .btn-check:active + .btn-black, .btn-black:active, .btn-black.active, .show > .btn-black.dropdown-toggle {
+  color: #fff;
+  background-color: #000000;
+  border-color: #000000;
+}
+.btn-check:checked + .btn-black:focus, .btn-check:active + .btn-black:focus, .btn-black:active:focus, .btn-black.active:focus, .show > .btn-black.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.1rem rgba(49, 132, 253, 0.5);
+}
+.btn-black:disabled, .btn-black.disabled {
+  color: #fff;
+  background-color: #000000;
+  border-color: #000000;
+}
+
+.cha_box {
+  border-radius: 10px;
+  padding: 5px 20px 5px 20px;
+  background-color: #ffffff;
+  background-color: rgba( 255, 255, 255, 0.4 );
+}
+
+.btn-ro {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #212529;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.2rem 0.75rem;
+  font-size: 0.7rem;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn-ro {
+    transition: none;
+  }
+}
+.btn-ro:hover {
+  color: #212529;
+}
+.btn-ro-check:focus + .btn-ro, .btn-ro:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+.btn-ro:disabled, .btn-ro.disabled, fieldset:disabled .btn-ro {
+  pointer-events: none;
+  opacity: 0.65;
+}
+
+.btn-outline-detail {
+  color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+.btn-outline-detail:hover {
+  color: #000;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+.btn-check:focus + .btn-outline-detail, .btn-outline-detail:focus {
+  box-shadow: 0 0 0 0.25rem rgba(248, 249, 250, 0.5);
+}
+.btn-check:checked + .btn-outline-detail, .btn-check:active + .btn-outline-detail, .btn-outline-detail:active, .btn-outline-detail.active, .btn-outline-detail.dropdown-toggle.show {
+  color: #000;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+.btn-check:checked + .btn-outline-detail:focus, .btn-check:active + .btn-outline-detail:focus, .btn-outline-detail:active:focus, .btn-outline-detail.active:focus, .btn-outline-detail.dropdown-toggle.show:focus {
+  box-shadow: 0 0 0 0.25rem rgba(248, 249, 250, 0.5);
+}
+.btn-outline-detail:disabled, .btn-outline-detail.disabled {
+  color: #f8f9fa;
+  background-color: transparent;
+}
+
+
